@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/RPSstyle.css">
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="title">
+            <p>ROCK, PAPER, SICSSOR</p>
+        </div>
+
+        <div class="score-container">
+            <div class="playerscore">You: <span id="playerScore">0</span></div>
+            <div class="computerscore">Computer: <span id="computerScore">0</span></div>
+        </div>
+
+        <div class="game-icon-container">
+            <div class="select1">
+                <button class="rock" id="rock" onclick="Choice('rock')"><i class="fa-regular fa-hand-back-fist"></i></button>
+                <button class="paper" id="paper" onclick="Choice('paper')"><i class="fa-regular fa-hand"></i></i></button>
+            </div>
+            <div class="select2">
+                <button class="scissor" id="scissors" onclick="Choice('scissors')"><i class="fa-regular fa-hand-scissors"></i></button>
+            </div>
+        </div>
+
+        <div class="start-game">
+            <p class="start-btn" id="display-win">Start Game</p>
+        </div>
+
+        <div class="computer-section">
+            <div class="computer fa-regular fa-hand-scissors"></div>
+        </div>
+
+    </div>
+
+    <script src="js/RPS.js"></script>
+</body>
+</html>
