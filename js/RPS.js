@@ -24,7 +24,7 @@ const Choice = function(yourChoice) {
 
 const checkWin = function (yourChoice, compChoice) {
     if ((yourChoice === 'rock' && compChoice === 'paper') || (yourChoice === 'paper' && compChoice === 'scissors') || (yourChoice === 'scissors' && compChoice === 'rock')) {
-        displayResult('You lose');
+        displayResult('You lost');
         displayer.style.color = 'red';
         compScore += 1
     } else { 
@@ -32,7 +32,7 @@ const checkWin = function (yourChoice, compChoice) {
             displayResult('Draw');
             displayer.style.color = '#000'
         } else {
-            displayResult('You win');
+            displayResult('You won');
             displayer.style.color = 'green';
             userScore += 1;
         }
